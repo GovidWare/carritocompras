@@ -159,17 +159,18 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-3 product-grids"> 
 									<div class="agile-products">
 										<div class="new-tag"><h6>Nuevo</h6></div>
-										<a href="single.html"><img src="<?php echo base_url();?>public/images/<?php echo $prod->imagen,".png" ?>" class="img-responsive" alt="img"></a>
+										<a href="#"><img src="<?php echo base_url();?>public/images/<?php echo $prod->imagen ?>" class="img-responsive" alt="img"></a>
 										<div class="agile-product-text">              
-											<h5><a href="single.html"><?php echo $prod->nombre ?></a></h5> 
+											<h5><a href="#"><?php echo $prod->nombre ?></a></h5> 
 											<h6><del><?php echo "$",$prod->precioAnt ?></del> <?php echo "$",$prod->precio ?></h6> 
-											<form action="#" method="post">
+											<form action="aslkdklas.html" method="post">
 												<input type="hidden" name="cmd" value="_cart" />
 												<input type="hidden" name="add" value="1" /> 
 												<input type="hidden" name="w3ls_item" value="<?php echo $prod->nombre ?>"/> 
 												<textarea name="" id="" cols="15" rows="2" disabled style="resize: none;"><?php echo $prod->descripcion ?></textarea>
 												<input type="hidden" name="amount" value="<?php echo $prod->precio ?>" /> 
 												<button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar al carrito</button>
+												
 											</form> 
 										</div>
 									</div> 
